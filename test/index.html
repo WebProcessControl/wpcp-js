@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>QUnit Tests</title>
+  <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="../bower_components/qunit/qunit/qunit.js"></script>
+  <script src="../bower_components/cbor/cbor.js"></script>
+  <script src="../wpcp.js"></script>
+  <script src="../wpcp.js"></script>
+  <script>
+    function define(id, dependecies, factory) {
+      if (!arguments.callee.amd)
+        throw "Called non-AMD function";
+      if (id !== "wpcp/wpcp")
+        throw "Unecpected id.";
+      if (dependecies[0] !== "cbor/cbor")
+        throw "Unecpected dependecies.";
+      var obj = factory({});
+      if (typeof obj === "object")
+        throw "Unecpected object";
+    }
+  </script>
+  <script src="../wpcp.js"></script>
+  <script>
+    define.amd = {};
+  </script>
+  <script src="../wpcp.js"></script>
+  <script src="./tests.js"></script>
+  <script>
+    QUnit.done(function(results){
+      window.global_test_results = results;
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "wpcp-js",
+  "version": "0.1.0",
+  "description": "The Web Process Control Protocol implemented in pure JavaScript.",
+  "keywords": [
+    "cbor",
+    "wpcp"
+  ],
+  "homepage": "https://github.com/WebProcessControl/wpcp-js",
+  "bugs": "https://github.com/WebProcessControl/wpcp-js/issues",
+  "license": "MIT",
+  "author": "Patrick Gansterer <paroga@paroga.com> (http://paroga.com/)",
+  "main": "wpcp.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/WebProcessControl/wpcp-js.git"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "ci": "grunt ci"
+  }
+}

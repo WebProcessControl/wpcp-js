@@ -1,0 +1,6 @@
+bower_components
+coverage
+doc
+node_modules
+
+sauce_connect.log
